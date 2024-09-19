@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload & Compression</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload and Compress Image</h1>
+        <form id="imageUploadForm">
+            <label for="imageName">Image Name:</label>
+            <input type="text" id="imageName" name="imageName" required>
+            
+            <label for="imageFile">Choose an Image:</label>
+            <input type="file" id="imageFile" name="imageFile" accept="image/*" required>
+            
+            <button type="submit">Upload Image</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
