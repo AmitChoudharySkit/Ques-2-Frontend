@@ -16,7 +16,7 @@ document.getElementById('imageUploadForm').addEventListener('submit', async func
         const binaryData = await imageFile.arrayBuffer();
         
         // Make a POST request to the API Gateway (replace API_GATEWAY_URL with the actual URL)
-        const response = await fetch('https://85y3s2ye7i.execute-api.ap-south-1.amazonaws.com/dev', {
+        const response = await fetch('https://85y3s2ye7i.execute-api.ap-south-1.amazonaws.com/prod', {
             method: 'POST',
             headers: {
                 'Content-Type': imageFile.type,  // Set the correct image content type (e.g., image/jpeg)
